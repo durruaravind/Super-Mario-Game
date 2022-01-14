@@ -71,7 +71,7 @@ setInterval(() =>
             animationDuration = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
             newDuration = animationDuration - 0.1;
             obstacle.style.animationDuration = newDuration + 's';
-        }, 2000);
+        }, 500);
     }
 }, 10);
 
