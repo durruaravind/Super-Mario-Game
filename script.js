@@ -47,7 +47,7 @@ setInterval(() =>
     oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
     offsetX = Math.abs(mx - ox);
     offsetY = Math.abs(my - oy);
-    //console.log(offsetX, offsetY)
+    
     if(offsetX < 75 && offsetY < 50)
     {
         gameOver.innerHTML = "Game Over"
@@ -70,7 +70,10 @@ setInterval(() =>
         setTimeout(() => {
             animationDuration = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
             newDuration = animationDuration - 0.1;
-            obstacle.style.animationDuration = newDuration + 's';
+            if(newDuration > 1.0)
+            {
+                obstacle.style.animationDuration = newDuration + 's';
+            }
         }, 500);
     }
 }, 10);
