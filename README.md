@@ -8,5 +8,5 @@ A basic web game project made using HTML, CSS, and JavaScript.
   
   Move right: D or ➡
 
-
-#Link to the hosted site: https://supermario-game.netlify.app/
+# Link to the hosted site: 
+(https://supermario-game.netlify.app/)
